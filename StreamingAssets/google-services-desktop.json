@@ -1,0 +1,37 @@
+{
+  "client": [
+    {
+      "services": {
+        "appinvite_service": {
+          "status": 0
+        }, 
+        "analytics_service": {
+          "status": 1
+        }
+      }, 
+      "oauth_client": [
+        {
+          "client_id": "268640523069-jkdlcnn6ek0ku25doriaqd9n1s0blt3m.apps.googleusercontent.com"
+        }
+      ], 
+      "api_key": [
+        {
+          "current_key": "AIzaSyCyRsp_vE8d72w26tzgTv1E0eIZpv98ZfY"
+        }
+      ], 
+      "client_info": {
+        "mobilesdk_app_id": "1:268640523069:ios:fd843131d2a6cf14", 
+        "android_client_info": {
+          "package_name": "com.twobeards.stealth"
+        }
+      }
+    }
+  ], 
+  "configuration_version": "1", 
+  "project_info": {
+    "storage_bucket": "stealth-3e715.appspot.com", 
+    "project_id": "stealth-3e715", 
+    "firebase_url": "https://stealth-3e715.firebaseio.com", 
+    "project_number": "268640523069"
+  }
+}
