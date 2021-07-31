@@ -19,7 +19,11 @@
       <div id="unity-warning"> </div>
       
     </div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script>
+		console.log(window.screen.availWidth + "x" + window.screen.availHeight);
+		console.log($(window).width()+ "x" + $(window).height());
+	
       var container = document.querySelector("#unity-container");
       var canvas = document.querySelector("#unity-canvas");
       var loadingBar = document.querySelector("#unity-loading-bar");
@@ -90,8 +94,14 @@
       } else {
         // Desktop style: Render the game canvas in a window that can be maximized to fullscreen:
 
-        canvas.style.width = "960px";
-        canvas.style.height = "600px";
+        <!-- canvas.style.width = "960px"; -->
+        <!-- canvas.style.height = "600px"; -->
+		var w = $(window).width() - 50;
+		var h = $(window).height() - 50;
+		canvas.width = w;
+		canvas.height = h;
+		canvas.style.width = w + "px";
+		canvas.style.height =  h + "px";
       }
 
       loadingBar.style.display = "block";
